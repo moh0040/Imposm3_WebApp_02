@@ -1,0 +1,42 @@
+
+#slct2{
+    height: 276px;
+    overflow:auto;
+}
+option {
+    padding: 15px;
+
+    font-weight: 600;
+}
+label {
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 15px;
+    cursor:text;
+}
+
+h4 a:hover {
+    color: blue;
+    font-weight:bold;
+}
+
+input[type=checkbox] {
+    transform: scale(1.4);
+    margin: 11px 0px 0px 6px;
+    cursor:pointer;
+}
+
+hr {
+    padding: 0px;
+    margin: 10px;
+
+
+}
+
+#slct2 hr{
+    padding: 0px;
+    margin: 5px;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
