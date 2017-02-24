@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="629b587d-d37b-49d0-bc57-f86776f5e043" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/map.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/javascript/Map.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/javascript/MapMenu.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cz/vsb/p4/testapp/MainController.class" afterPath="$PROJECT_DIR$/target/classes/cz/vsb/p4/testapp/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cz/vsb/p4/testapp/PostGisConnection.class" afterPath="$PROJECT_DIR$/target/classes/cz/vsb/p4/testapp/PostGisConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/PostGisConnection.java" afterPath="$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/PostGisConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/statistic.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/statistic.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/map.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/map.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +34,8 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4110">
-              <caret line="298" column="53" lean-forward="false" selection-start-line="298" selection-start-column="42" selection-end-line="298" selection-end-column="53" />
+            <state relative-caret-position="277">
+              <caret line="299" column="32" lean-forward="false" selection-start-line="299" selection-start-column="28" selection-end-line="299" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -63,26 +56,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2610">
               <caret line="203" column="117" lean-forward="false" selection-start-line="203" selection-start-column="117" selection-end-line="203" selection-end-column="117" />
-              <folding>
-                <marker date="1487879966840" expanded="true" signature="1672:1745" ph="SELECT count... osm_all" />
-                <marker date="1487879966840" expanded="true" signature="2250:2333" ph="SELECT count... osm_all" />
-                <marker date="1487879966840" expanded="true" signature="2743:2771" ph="select * fro... osm_all" />
-                <marker date="1487879966840" expanded="true" signature="3408:3455" ph="SELECT COUNT... osm_all" />
-                <marker date="1487879966840" expanded="true" signature="4146:4187" ph="select * fro... imposm3_restaurants_geojson" />
-                <marker date="1487879966840" expanded="true" signature="5423:5465" ph="DROP VIEW IF... " />
-                <marker date="1487879966840" expanded="true" signature="5467:5487" ph="DROP VIEW IF... " />
-                <marker date="1487879966840" expanded="true" signature="5467:5501" ph="DROP VIEW IF... " />
-                <marker date="1487879966840" expanded="true" signature="5503:5687" ph="CREATE VIEW missingValue... " />
-                <marker date="1487879966840" expanded="true" signature="5503:5702" ph="CREATE VIEW \&quot;+NameOfView+\&quot;... " />
-                <marker date="1487879966840" expanded="true" signature="5535:5575" ph="select id, t... " />
-                <marker date="1487879966840" expanded="true" signature="5535:5670" ph="select id, t... osm_all" />
-                <marker date="1487879966840" expanded="true" signature="5704:6044" ph="CREATE VIEW imposm3_restaurants_geojson... " />
-                <marker date="1487879966840" expanded="true" signature="5742:6044" ph="SELECT row_t... type" />
-                <marker date="1487879966840" expanded="true" signature="5782:6036" ph="SELECT 'Feat... type" />
-                <marker date="1487879966840" expanded="true" signature="5864:5973" ph="SELECT 'Feat... " />
-                <marker date="1487879966840" expanded="true" signature="5864:6030" ph="SELECT 'Feat... imposm3_restaurants" />
-                <marker date="1487879966840" expanded="true" signature="6463:6505" ph="select geojs... missingValue_geojson" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,7 +64,7 @@
       <file leaf-file-name="statistic.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/statistic.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="1875">
               <caret line="125" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
             </state>
@@ -130,17 +104,11 @@
       <file leaf-file-name="map.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/map.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="151" column="38" lean-forward="true" selection-start-line="151" selection-start-column="38" selection-end-line="151" selection-end-column="38" />
+            <state relative-caret-position="1590">
+              <caret line="153" column="18" lean-forward="true" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1487904129703" expanded="true" signature="9462:9468" ph="©" />
+                <marker date="1487946274377" expanded="true" signature="9461:9467" ph="©" />
               </folding>
             </state>
           </provider>
@@ -233,10 +201,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/style/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/Map.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/PostGisConnection.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/javascript/map.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/statistic.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/map.jsp" />
       </list>
     </option>
@@ -271,25 +239,26 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Imposm3_WebApp_0222" />
+              <option name="myItemId" value="Imposm3_WebApp_02popo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Imposm3_WebApp_0222" />
+              <option name="myItemId" value="Imposm3_WebApp_02popo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Imposm3_WebApp_0222" />
+              <option name="myItemId" value="Imposm3_WebApp_02popo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Imposm3_WebApp_0222" />
+              <option name="myItemId" value="Imposm3_WebApp_02popo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -315,11 +284,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Imposm3_WebApp_0222" />
+              <option name="myItemId" value="Imposm3_WebApp_02popo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Imposm3_WebApp_0222" />
+              <option name="myItemId" value="Imposm3_WebApp_02popo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -337,11 +306,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Imposm3_WebApp_0222" />
+              <option name="myItemId" value="Imposm3_WebApp_02popo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Imposm3_WebApp_0222" />
+              <option name="myItemId" value="Imposm3_WebApp_02popo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -352,10 +321,17 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -820,11 +796,12 @@
       <workItem from="1487846193259" duration="1466000" />
       <workItem from="1487874057226" duration="13765000" />
       <workItem from="1487899931631" duration="3528000" />
+      <workItem from="1487945055436" duration="2091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168749000" />
+    <option name="totallyTimeSpent" value="170840000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,11 +834,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29798657" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37181208" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946298" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946298" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26957637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27278563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1041,45 +1018,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4110">
-          <caret line="298" column="53" lean-forward="false" selection-start-line="298" selection-start-column="42" selection-end-line="298" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/PostGisConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2610">
           <caret line="203" column="117" lean-forward="false" selection-start-line="203" selection-start-column="117" selection-end-line="203" selection-end-column="117" />
-          <folding>
-            <marker date="1487879966840" expanded="true" signature="1672:1745" ph="SELECT count... osm_all" />
-            <marker date="1487879966840" expanded="true" signature="2250:2333" ph="SELECT count... osm_all" />
-            <marker date="1487879966840" expanded="true" signature="2743:2771" ph="select * fro... osm_all" />
-            <marker date="1487879966840" expanded="true" signature="3408:3455" ph="SELECT COUNT... osm_all" />
-            <marker date="1487879966840" expanded="true" signature="4146:4187" ph="select * fro... imposm3_restaurants_geojson" />
-            <marker date="1487879966840" expanded="true" signature="5423:5465" ph="DROP VIEW IF... " />
-            <marker date="1487879966840" expanded="true" signature="5467:5487" ph="DROP VIEW IF... " />
-            <marker date="1487879966840" expanded="true" signature="5467:5501" ph="DROP VIEW IF... " />
-            <marker date="1487879966840" expanded="true" signature="5503:5687" ph="CREATE VIEW missingValue... " />
-            <marker date="1487879966840" expanded="true" signature="5503:5702" ph="CREATE VIEW \&quot;+NameOfView+\&quot;... " />
-            <marker date="1487879966840" expanded="true" signature="5535:5575" ph="select id, t... " />
-            <marker date="1487879966840" expanded="true" signature="5535:5670" ph="select id, t... osm_all" />
-            <marker date="1487879966840" expanded="true" signature="5704:6044" ph="CREATE VIEW imposm3_restaurants_geojson... " />
-            <marker date="1487879966840" expanded="true" signature="5742:6044" ph="SELECT row_t... type" />
-            <marker date="1487879966840" expanded="true" signature="5782:6036" ph="SELECT 'Feat... type" />
-            <marker date="1487879966840" expanded="true" signature="5864:5973" ph="SELECT 'Feat... " />
-            <marker date="1487879966840" expanded="true" signature="5864:6030" ph="SELECT 'Feat... imposm3_restaurants" />
-            <marker date="1487879966840" expanded="true" signature="6463:6505" ph="select geojs... missingValue_geojson" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/javascript/map.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/statistic.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="1875">
           <caret line="125" column="21" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding />
         </state>
@@ -1093,19 +1043,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cz/vsb/p4/testapp/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="299" column="32" lean-forward="false" selection-start-line="299" selection-start-column="28" selection-end-line="299" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/map.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="151" column="38" lean-forward="true" selection-start-line="151" selection-start-column="38" selection-end-line="151" selection-end-column="38" />
+        <state relative-caret-position="1590">
+          <caret line="153" column="18" lean-forward="true" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1487904129703" expanded="true" signature="9462:9468" ph="©" />
+            <marker date="1487946274377" expanded="true" signature="9461:9467" ph="©" />
           </folding>
         </state>
       </provider>

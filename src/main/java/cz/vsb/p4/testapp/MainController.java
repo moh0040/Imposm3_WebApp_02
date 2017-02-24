@@ -297,6 +297,7 @@ public class MainController extends JSON {
 
         geojsontext=postgis.geojsontext(NameOfView);
         model.addAttribute("GeoJsonText", geojsontext);
+        model.addAttribute("Name", NameOfTag);
 
         return "/map";
 

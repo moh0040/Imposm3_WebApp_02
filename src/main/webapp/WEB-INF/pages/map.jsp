@@ -133,7 +133,7 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                <div id="map" style="height: 400px;"></div>
+                                <div id="map" style="height: 100%;"></div>
                             </div>
                         </div>
                     </div>
@@ -154,9 +154,12 @@
     }).addTo(map);
 </script>
 <script>
-    L.geoJson(${GeoJsonText}, {
-
+    var layerGroup = L.geoJson(${GeoJsonText}, {
+        onEachFeature: function (feature, layer) {
+            layer.bindPopup('<p> Osm_id: '+feature.properties.f1+'</p><p>${Name}: '+feature.properties.f2+'</p>');
+        }
     }).addTo(map);
+
 </script>
 </body>
 </html>
