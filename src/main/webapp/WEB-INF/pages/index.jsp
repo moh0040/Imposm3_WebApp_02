@@ -14,26 +14,27 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="resources/style/styleIn.css" />
-
 </head>
 <body>
 <form id = "selection" action="/createObject" method="POST" onSubmit="if(!confirm('are you sure?')){return false;}" >
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<div class="navbar-header">
-							<a class="navbar-brand" href="#">My Project</a>
-						</div>
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="/index"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
-							<li ><a href="/statistic"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Statistics</a></li>
-							<li ><a href="/map"><i class="fa fa-map" aria-hidden="true"></i>&nbsp;Map</a></li>
-							<li ><a href="/about"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a></li>
-						</ul>
-					</div>
-				</nav>
+			    <div class="container">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">My Project</a>
+                            </div>
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="/index"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+                                <li ><a href="/statistic"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Statistics</a></li>
+                                <li ><a href="/map"><i class="fa fa-map" aria-hidden="true"></i>&nbsp;Map</a></li>
+                                <li ><a href="/about"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+				<div>
 			</div>
 		</div>
 		<div class="row">
@@ -62,18 +63,18 @@
 											</div><br/>
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Osm.pbf </span>
-												<input name="pbf" id="pbf" type="text" class="form-control" placeholder="tmp/pbf" value="C:/s/romania.pbf">
+												<input name="pbf" id="pbf" type="text" class="form-control" placeholder=".pbf dir" >
 											</div>
 										</div>
 										<div class="col-md-4">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Json </span>
-												<input name="jsondir" id="jsondir" type="text" class="form-control" placeholder="tmp/json/" value="C:/s/romania.json">
+												<input name="jsondir" id="jsondir" type="text" class="form-control" placeholder="Json dir" >
 											</div><br/>
 											<div class="form-group">
 												<div class="input-group">
 													<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Geojson</span>
-													<input name="geojsondir" id="geojsondir" type="text" class="form-control" placeholder="tmp/geojson/" value="C:/s/geojson.json">
+													<input name="geojsondir" id="geojsondir" type="text" class="form-control" placeholder="GeoJson dir">
 												</div>
 											</div>
 										</div>
@@ -88,7 +89,7 @@
 											</div><br/>
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-table" aria-hidden="true"></i>&nbsp;Table</span>
-												<input name="Ntable" type="text" class="form-control" placeholder="Name of Table">
+												<input name="Ntable" type="text" class="form-control" placeholder="Type Name of Table">
 											</div>
 										</div>
 									</div>
@@ -160,15 +161,15 @@
 										<div class="col-md-6">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-internet-explorer" aria-hidden="true"></i></span>
-												<input id="host" type="text" class="form-control" name="host" placeholder="Host">
+												<input id="host" type="text" class="form-control" name="host" placeholder="Host" >
 											</div>
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-database" aria-hidden="true"></i></span>
-												<input id="database" type="text" class="form-control" name="database" placeholder="Database">
+												<input id="database" type="text" class="form-control" name="database" placeholder="Database" >
 											</div>
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-												<input id="user" type="text" class="form-control" name="user" placeholder="User">
+												<input id="user" type="text" class="form-control" name="user" placeholder="Username" >
 											</div>
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
@@ -185,7 +186,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Cach Dir:</span>
-													<input name="cachedir" id="cachedir" type="text" class="form-control" placeholder="tmp/Imposm3/" value="/tmp/Imposm3/">
+													<input name="cachedir" id="cachedir" type="text" class="form-control" placeholder="Cach dir" >
 												</div>
 											</div>
 											<div class="input-group">

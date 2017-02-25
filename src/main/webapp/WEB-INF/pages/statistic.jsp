@@ -16,26 +16,26 @@
             font-weight:bold;
         }
     </style>
-
-
 </head>
 <body>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">My Project</a>
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">My Project</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li ><a href="/index"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
+                            <li class="active"><a href="/statistic"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Statistics</a></li>
+                            <li ><a href="/map"><i class="fa fa-map" aria-hidden="true"></i>&nbsp;Map</a></li>
+                            <li ><a href="/about"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a></li>
+                        </ul>
                     </div>
-                    <ul class="nav navbar-nav">
-                        <li ><a href="/index"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
-                        <li class="active"><a href="/statistic"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Statistics</a></li>
-                        <li ><a href="/map"><i class="fa fa-map" aria-hidden="true"></i>&nbsp;Map</a></li>
-                        <li ><a href="/about"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a></li>
-                    </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -46,7 +46,8 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                    Collapsible Group 1</a>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;
+                                 General</a>
                             </h4>
                         </div>
                         <div id="collapse1" class="panel-collapse collapse">
@@ -92,7 +93,8 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                    Collapsible Group 2</a>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;
+                                Key and Value</a>
                             </h4>
                         </div>
                         <div id="collapse2" class="panel-collapse collapse">

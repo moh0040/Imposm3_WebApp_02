@@ -77,10 +77,10 @@ public class PostGisConnection {
 
 
 
-    public String number_of_attribute(String point) throws IOException, SQLException {
+    public String number_of_attribute(String point,String NT) throws IOException, SQLException {
             Connection connection = DriverManager.getConnection(url, user, passwd);
             Statement s12 = connection.createStatement();
-        ResultSet r12 = s12.executeQuery("SELECT count(*)AS geometry FROM import.osm_all where tags ? '"+ point +"'");
+        ResultSet r12 = s12.executeQuery("SELECT count(*)AS geometry FROM "+NT+" where tags ? '"+ point +"'");
         String count112;
         if(r12.next()) {
             count112 = r12.getString("geometry");
@@ -98,10 +98,10 @@ public class PostGisConnection {
 
 
 
-    public String Number_of_Values(String point,String key1) throws IOException, SQLException {
+    public String Number_of_Values(String point,String key1,String NT) throws IOException, SQLException {
         Connection connection = DriverManager.getConnection(url, user, passwd);
         Statement s1 = connection.createStatement();
-        ResultSet r1 = s1.executeQuery("SELECT count(*)AS geometry FROM import.osm_all where tags @> '"+key1 +"=>"+point+"'");
+        ResultSet r1 = s1.executeQuery("SELECT count(*)AS geometry FROM "+NT+" where tags @> '"+key1 +"=>"+point+"'");
         String count11;
         if(r1.next()) {
             count11 = r1.getString("geometry");
@@ -115,11 +115,11 @@ public class PostGisConnection {
 
 
 
-    public int NumberOfColums(){
+    public int NumberOfColums(String NT){
         try{
 
             Connection connection = DriverManager.getConnection(url, user, passwd);
-            PreparedStatement ps=connection.prepareStatement("select * from import.osm_all");
+            PreparedStatement ps=connection.prepareStatement("select * from "+NT+"");
             ResultSet rs=ps.executeQuery();
             ResultSetMetaData rsmd=rs.getMetaData();
             int count5 =rsmd.getColumnCount();
@@ -134,12 +134,12 @@ public class PostGisConnection {
 
 
 
-    public int NumberOfRows(){
+    public int NumberOfRows(String NT){
         try{
 
             Connection connection = DriverManager.getConnection(url, user, passwd);
             Statement ss = connection.createStatement();
-            ResultSet rr = ss.executeQuery("SELECT COUNT(*) AS rowcount FROM import.osm_all");
+            ResultSet rr = ss.executeQuery("SELECT COUNT(*) AS rowcount FROM "+NT+"");
             rr.next();
             int count6 = rr.getInt("rowcount");
             rr.close();
@@ -157,47 +157,11 @@ public class PostGisConnection {
 
 
 
-//
-//        //create Geojson file from view in postgis
-//    public String GeoJson() throws IOException {
-//        try{
-//            Connection connection = DriverManager.getConnection(url, user, passwd);
-//            Statement ss = connection.createStatement();
-//            ResultSet rr = ss.executeQuery
-//                    ("select * from imposm3_restaurants_geojson");
-//            rr.next();
-//            String count8 = rr.getString("geojson");
-//            System.out.println(count8);
-//            rr.close();
-//
-//
-//            this.setGeojsontable(count8);
-//            geojsonfile ="C:/s/geojson.json";
-//            File file = new File(geojsonfile);
-//            // creates the file
-//            file.createNewFile();
-//            // creates a FileWriter Object
-//            FileWriter writer = new FileWriter(file);
-//            // Writes the content to the file
-//            writer.write(count8);
-//            writer.flush();
-//            writer.close();
-//            return geojsontable;
-//        }catch (SQLException e){
-//            System.out.println("connection failed! check output console");
-//            e.printStackTrace();
-//            return geojsontable;
-//        }
-//
-//    }
 
 
 
 
-
-
-
-    //creat view geojson
+    //create view geojson
     public String geojsonview(String NameOfView, String NameOfTable,String NameOfKey, String NameOfValue, String NameOfTag, String LimitNumber) throws IOException, SQLException {
         Connection connection = DriverManager.getConnection(url, user, passwd);
         Statement s12 = connection.createStatement();

@@ -65,17 +65,6 @@ public class MainController extends JSON {
 
 
 
-        ////connect to downloader class, just get the address of pbf file from  pc location
-        //Downloader d = new Downloader();
-        ////by active below code it  also possible to start downloding pbf from url but in my case i dont use it it takes some time for download and it is not good for web app
-        ////d.start();
-        //String down1=d.filename;
-        //System.out.println("Download add: "+ down1+"\n");
-
-
-
-
-
             //adresse="-write -connection postgis://osm:osm@localhost/osm"; //should be like this
 
         String Postgis="-write"+" "+"-connection"+" "+"postgis://"+user+":"+password+"@"+host+"/"+database;
@@ -110,8 +99,10 @@ public class MainController extends JSON {
             System.out.println("this is the full address for imposm3:"+ json_final+"\n");
 
         //this code will run the imposm3 into terminal by just adding above code
+
         Imposm im = new Imposm();
-        im.importToDb(json_final);
+
+        im.importToDb(json_final,pbf);
         long size = im.newlength;
         double size2 = size*0.00000095367432;
         DecimalFormat df = new DecimalFormat("0.00");
@@ -127,8 +118,8 @@ public class MainController extends JSON {
         //int numset2 = postgis.NumberOfLines();
         //int numset3 = postgis.NumberOfPoly();
         //int numset4 = postgis.NumberOfMultiPoly();
-        int numset5 = postgis.NumberOfColums();
-       int numset6 = postgis.NumberOfRows();
+        int numset5 = postgis.NumberOfColums(NT);
+       int numset6 = postgis.NumberOfRows(NT);
         //String numset7 = postgis.TableVaue();
         //String numset8 = postgis.GeoJson();
        // List<String> numset8 = postgis.ge
@@ -159,6 +150,8 @@ public class MainController extends JSON {
       //  return "redirect:/";
 
 
+
+
             String names[] = value;
 
             String[] number_of_attribute = new String[names.length];
@@ -170,9 +163,11 @@ public class MainController extends JSON {
 
             for (int i=0; i<value.length; i++){
                 names[i] =  value[i].toString();
-                number_of_attribute[i] = postgis.number_of_attribute(value[i]);
-                Number_of_Values[i] = postgis.Number_of_Values(value[i],key1);
+                number_of_attribute[i] = postgis.number_of_attribute(value[i],NT);
+                Number_of_Values[i] = postgis.Number_of_Values(value[i],key1,NT);
             }
+
+
 
             model.addAttribute("names", names);
             model.addAttribute("number", number_of_attribute);

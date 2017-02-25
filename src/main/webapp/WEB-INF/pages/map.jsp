@@ -23,21 +23,23 @@
 <form id = "selection2" action="/createView" method="post" onSubmit="if(!confirm('are you sure?')){return false;}" >
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="#">My Project</a>
-                        </div>
-                        <ul class="nav navbar-nav">
+        	<div class="col-md-12">
+        	    <div class="container">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">My Project</a>
+                            </div>
+                            <ul class="nav navbar-nav">
                             <li ><a href="/index"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a></li>
                             <li ><a href="/statistic"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Statistics</a></li>
-                            <li class="active" ><a href="/map"><i class="fa fa-map" aria-hidden="true"></i>&nbsp;Map</a></li>
+                            <li class="active"><a href="/map"><i class="fa fa-map" aria-hidden="true"></i>&nbsp;Map</a></li>
                             <li ><a href="/about"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+                            </ul>
+                        </div>
+                    </nav>
+        		</div>
+        	</div>
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -47,18 +49,18 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                        Collapsible Group 1</a>
+                                    <i class="fa fa-map-pin" aria-hidden="true"></i>&nbsp;
+                                     Map configuration</a>
                                 </h4>
                             </div>
                             <div id="collapse1" class="panel-collapse collapse">
                                 <div class="panel-body">
-
-                                    <div class="row"><h4 style="text-align: center;">Map configuration</h4><hr>
+                                    <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;View Name</span>
-                                                    <input name="NameOfView" id="NameOfView" type="text" class="form-control" placeholder="Type View Name" value="">
+                                                    <input name="NameOfView" id="NameOfView" type="text" class="form-control" placeholder="Type Name Of View" value="">
                                                 </div>
                                             </div>
                                         </div>
@@ -66,7 +68,7 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Table Name</span>
-                                                    <input name="NameOfTable" id="NameOfTable" type="text" class="form-control" placeholder="Type Table Name" value="">
+                                                    <input name="NameOfTable" id="NameOfTable" type="text" class="form-control" placeholder="Type Name Of Table" value="">
                                                 </div>
                                             </div>
                                         </div>
@@ -76,7 +78,7 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Key</span>
-                                                    <input name="NameOfKey" id="NameOfKey" type="text" class="form-control" placeholder="Type Key Feature" value="">
+                                                    <input name="NameOfKey" id="NameOfKey" type="text" class="form-control" placeholder="Type Name Of Key Feature" >
                                                 </div>
                                             </div>
                                         </div>
@@ -84,7 +86,7 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Value</span>
-                                                    <input name="NameOfValue" id="NameOfValue" type="text" class="form-control" placeholder="Type value of key" value="">
+                                                    <input name="NameOfValue" id="NameOfValue" type="text" class="form-control" placeholder="Type Name Of Value" >
                                                 </div>
                                             </div>
                                         </div>
@@ -94,7 +96,7 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Filter Tag</span>
-                                                    <input name="NameOfTag" id="NameOfTag" type="text" class="form-control" placeholder="Type tag for Filter" value="">
+                                                    <input name="NameOfTag" id="NameOfTag" type="text" class="form-control" placeholder="Type Key Tag For Filter" >
                                                 </div>
                                             </div>
                                         </div>
@@ -102,16 +104,18 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Limit data</span>
-                                                    <input name="LimitNumber" id="LimitNumber" type="text" class="form-control" placeholder="Type number of row" value="">
+                                                    <input name="LimitNumber" id="LimitNumber" type="text" class="form-control" placeholder="Type Number Of Data" >
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <button style="width: 100%" type="submit" class="btn btn-default">Create GeoJson View</button>
-                                            <div style="color: darkgreen;text-align: center">${CreateGeojson}</div>
-                                        </div>
+                                    	<div class="col-sm-5" ></div>
+                                    	<div class="col-sm-2" >
+                                    		<img  src="https://media.giphy.com/media/sSgvbe1m3n93G/giphy.gif" id="animated-gif" style="display:none; width: 100%;"/>
+                                    		<button style="width: 100%" type="submit" class="btn btn-default">Submit</button></div>
+                                    		<div style="color: darkgreen;text-align: center">${CreateGeojson}</div>
+                                    	<div class="col-sm-5" ></div>
                                     </div>
                                 </div>
                             </div>
@@ -120,14 +124,13 @@
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a style="text-decoration: none" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                        Collapsible Group 2</a>
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>&nbsp;
+                                     GeoJSON</a>
                                 </h4>
                             </div>
                             <div id="collapse2" class="panel-collapse collapse">
                                 <div class="panel-body">
-
                                     <div class="panel-body" style="height: 150px; overflow: scroll">${GeoJsonText}</div>
-
                                 </div>
                             </div>
                         </div>
