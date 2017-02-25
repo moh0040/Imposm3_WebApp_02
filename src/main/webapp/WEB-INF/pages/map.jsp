@@ -136,7 +136,7 @@
                         <div style="color: darkgreen;text-align: center">${CreateGeojson}</div>
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                <div id="map" style="height: 100%;"></div>
+                                <div id="map" style="height: 500px;"></div>
                             </div>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
 </form>
 <%--scrip for map--%>
 <script>
-    var map = L.map('map', {scrollWheelZoom:true}).setView([46.784131, 23.609703], 15);
+    var map = L.map('map', {scrollWheelZoom:true}).setView([49.828985, 18.239371], 12);
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {maxZoom: 20,
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +

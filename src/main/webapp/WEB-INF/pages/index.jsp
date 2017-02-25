@@ -53,9 +53,17 @@
 										<h4 style="text-align: center;">Data Location</h4><hr>
 										<div class="col-md-6">
 											<div class="input-group">
-												<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Osm.pbf </span>
-												<input name="pbf" id="pbf" type="text" class="form-control" placeholder=".pbf dir" >
-											</div><br/>
+                                            	<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i> Data source</span>
+                                            	<select class="form-control" id="city" name="city">
+                                            		<option>Prague</option>
+                                            		<option>Brno</option>
+                                            		<option>Ostrava</option>
+                                            		<option>Plzen</option>
+                                            		<option>Olomouc</option>
+                                            		<option>Pardubice</option>
+                                            		<option>Ceskebudejovice</option>
+                                            	</select>
+                                            </div><br/>
 											<div class="input-group">
                                             	<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Json </span>
                                             	<input name="jsondir" id="jsondir" type="text" class="form-control" placeholder="Json dir" >

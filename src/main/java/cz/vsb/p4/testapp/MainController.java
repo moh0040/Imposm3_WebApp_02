@@ -29,13 +29,13 @@ public class MainController extends JSON {
         @RequestMapping(method = RequestMethod.POST, path = "/createObject")
 
         public String createObject(Model model,
+                @RequestParam("city") String city,
                 @RequestParam("host") String host,
                 @RequestParam("database") String database,
                 @RequestParam("user") String user,
                 @RequestParam("password") String password,
                 @RequestParam("state") String state,
                 @RequestParam("cachedir") String cachedir,
-                @RequestParam("pbf") String pbf,
                 @RequestParam(value = "jsondir", required = false) String[] jsondir,
                 @RequestParam(value = "key", required = false) String[] key,
                 @RequestParam(value = "key", required = false) String key1,
@@ -47,13 +47,25 @@ public class MainController extends JSON {
                 @RequestParam(value = "value", required = false) String[] value)
                 throws IOException, SQLException {
 
-            System.out.println("this is the key1 which is selected : "+ key1+"\n");
-            System.out.println("this is the host which is selected : "+ host+"\n");
-            System.out.println("this is the database which is selected : "+ database+"\n");
-            System.out.println("this is the user which is selected : "+ user+"\n");
-            System.out.println("this is the pass which is selected : "+ password+"\n");
-            System.out.println("this is the state which is selected : "+ state+"\n");
-            System.out.println("this is the state which is selected : "+ cachedir+"\n");
+
+
+
+            String source ="";
+            if(city.equals("Prague")){
+                source="/home/saeed/down/source/prague.pbf";
+            }else if(city.equals("Brno")){
+                source="/home/saeed/down/source/brno.pbf";
+            }else if(city.equals("Ostrava")) {
+                source = "/home/saeed/down/source/ostrava.pbf";
+            }else if(city.equals("Plzen")){
+                source="/home/saeed/down/source/plzen.pbf";
+            }else if(city.equals("Olomouc")) {
+                source = "/home/saeed/down/source/olomouc.pbf";
+            }else if(city.equals("Pardubice")){
+                source="/home/saeed/down/source/Pardubice.pbf";
+            }else if(city.equals("Ceskebudejovice")) {
+                source = "/home/saeed/down/source/Ceskebudejovice.pbf";
+            };
 
 
 
@@ -86,14 +98,9 @@ public class MainController extends JSON {
 
 
 
-        //create table on public schema
-        //String json_final="imposm3 import -mapping "+"/home/saeed/down/ostrava.json"+" -read "+down1+" -overwritecache "+add+" -deployproduction";
-
-
-
 
         //create table on import schema
-        String json_final="imposm3 import -mapping "+jsonadd+" -read "+" "+pbf+" "+" "+state+" "+Postgis+"?prefix=NONE -deployproduction -cachedir "+cachedir;
+        String json_final="imposm3 import -mapping "+jsonadd+" -read "+" "+source+" "+" "+state+" "+Postgis+"?prefix=NONE -deployproduction -cachedir "+cachedir;
 
             System.out.println("this is the full address for imposm3:"+ json_final+"\n");
 
@@ -101,7 +108,7 @@ public class MainController extends JSON {
 
         Imposm im = new Imposm();
 
-        im.importToDb(json_final,pbf);
+        im.importToDb(json_final,source);
         long size = im.newlength;
         double size2 = size*0.00000095367432;
         DecimalFormat df = new DecimalFormat("0.00");

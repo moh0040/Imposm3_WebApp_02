@@ -122,7 +122,7 @@
                                         </td>
                                         <td>
                                             <c:forEach items="${number}" var="notag">
-                                                <p>${notag}</p>
+                                                <p style="color:red;">${notag}</p>
                                             </c:forEach>
                                         </td>
                                         <td>
