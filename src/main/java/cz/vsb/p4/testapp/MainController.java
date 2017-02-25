@@ -23,13 +23,12 @@ import java.util.Map;
  */
 @org.springframework.stereotype.Controller
 public class MainController extends JSON {
-    public static String city;
+
 
     //THIS IS FOR HAVE A SELECTION ALL IN ONE (POINT,LINE,POLY...)
         @RequestMapping(method = RequestMethod.POST, path = "/createObject")
 
         public String createObject(Model model,
-                @RequestParam("city") String city,
                 @RequestParam("host") String host,
                 @RequestParam("database") String database,
                 @RequestParam("user") String user,

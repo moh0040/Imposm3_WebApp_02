@@ -51,34 +51,17 @@
 								<div class="panel-body">
 									<div class="row">
 										<h4 style="text-align: center;">Data Location</h4><hr>
-										<div class="col-md-4">
-											<div class="input-group">
-												<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i> Data source</span>
-												<select class="form-control" id="city" name="city">
-													<option>Ostrava</option>
-													<option>Prague</option>
-													<option>Brno</option>
-													<option>Podebrady</option>
-												</select>
-											</div><br/>
+										<div class="col-md-6">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Osm.pbf </span>
 												<input name="pbf" id="pbf" type="text" class="form-control" placeholder=".pbf dir" >
-											</div>
-										</div>
-										<div class="col-md-4">
-											<div class="input-group">
-												<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Json </span>
-												<input name="jsondir" id="jsondir" type="text" class="form-control" placeholder="Json dir" >
 											</div><br/>
-											<div class="form-group">
-												<div class="input-group">
-													<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Geojson</span>
-													<input name="geojsondir" id="geojsondir" type="text" class="form-control" placeholder="GeoJson dir" >
-												</div>
-											</div>
+											<div class="input-group">
+                                            	<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Json </span>
+                                            	<input name="jsondir" id="jsondir" type="text" class="form-control" placeholder="Json dir" >
+                                            </div>
 										</div>
-										<div class="col-md-4">
+										<div class="col-md-6">
 											<div class="input-group">
 												<span class="input-group-addon"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;Geometry</span>
 												<select class="form-control" name="geometry">
