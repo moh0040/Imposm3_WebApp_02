@@ -74,7 +74,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Geojson</span>
-													<input name="geojsondir" id="geojsondir" type="text" class="form-control" placeholder="GeoJson dir">
+													<input name="geojsondir" id="geojsondir" type="text" class="form-control" placeholder="GeoJson dir" >
 												</div>
 											</div>
 										</div>
@@ -186,7 +186,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<span class="input-group-addon"><i class="fa fa-sitemap" aria-hidden="true"></i>&nbsp;Cach Dir:</span>
-													<input name="cachedir" id="cachedir" type="text" class="form-control" placeholder="Cach dir" >
+													<input name="cachedir" id="cachedir" type="text" class="form-control" placeholder="Cach dir"  >
 												</div>
 											</div>
 											<div class="input-group">

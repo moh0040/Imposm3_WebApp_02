@@ -60,7 +60,7 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;View Name</span>
-                                                    <input name="NameOfView" id="NameOfView" type="text" class="form-control" placeholder="Type Name Of View" value="">
+                                                    <input name="NameOfView" id="NameOfView" type="text" class="form-control" placeholder="Type Name Of View" >
                                                 </div>
                                             </div>
                                         </div>
@@ -68,7 +68,7 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;Table Name</span>
-                                                    <input name="NameOfTable" id="NameOfTable" type="text" class="form-control" placeholder="Type Name Of Table" value="">
+                                                    <input name="NameOfTable" id="NameOfTable" type="text" class="form-control" placeholder="Type Name Of Table" >
                                                 </div>
                                             </div>
                                         </div>
@@ -114,7 +114,6 @@
                                     	<div class="col-sm-2" >
                                     		<img  src="https://media.giphy.com/media/sSgvbe1m3n93G/giphy.gif" id="animated-gif" style="display:none; width: 100%;"/>
                                     		<button style="width: 100%" type="submit" class="btn btn-default">Submit</button></div>
-                                    		<div style="color: darkgreen;text-align: center">${CreateGeojson}</div>
                                     	<div class="col-sm-5" ></div>
                                     </div>
                                 </div>
@@ -134,6 +133,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div style="color: darkgreen;text-align: center">${CreateGeojson}</div>
                         <div class="panel panel-default">
                             <div class="panel-body">
                                 <div id="map" style="height: 100%;"></div>
@@ -153,7 +153,7 @@
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
         'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-        id: 'mapbox.dark'
+        id: 'mapbox.streets'
     }).addTo(map);
 </script>
 <script>

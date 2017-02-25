@@ -18,6 +18,7 @@ public class PostGisConnection {
 
     public String geojsonfile;
 
+    //osm is database name
     String url = "jdbc:postgresql://127.0.0.1:5432/osm";
     String user = "postgres";
     String passwd = "saeed";
