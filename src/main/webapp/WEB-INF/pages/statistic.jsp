@@ -105,7 +105,7 @@
                                         <th>Key Selected</th>
                                         <th>Number Of Values</th>
                                         <th>Deprecated Tags</th>
-                                        <th>Name_of_column</th>
+
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -123,11 +123,6 @@
                                         <td>
                                             <c:forEach items="${number}" var="notag">
                                                 <p style="color:red;">${notag}</p>
-                                            </c:forEach>
-                                        </td>
-                                        <td>
-                                            <c:forEach items="${Name_of_column}" var="Name_of_column">
-                                                <p>${Name_of_column}</p>
                                             </c:forEach>
                                         </td>
                                     </tr>
