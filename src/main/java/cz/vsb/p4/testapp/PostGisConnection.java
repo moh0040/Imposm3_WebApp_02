@@ -21,7 +21,7 @@ public class PostGisConnection {
     //osm is database name
     String url = "jdbc:postgresql://127.0.0.1:5432/osm";
     String user = "postgres";
-    String passwd = "saeed";
+    String passwd = "osm";
 
     public int getNumcolumn() {
         return Numcolumn;
