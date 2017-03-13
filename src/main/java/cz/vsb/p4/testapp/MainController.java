@@ -120,41 +120,15 @@ public class MainController extends JSON {
         //connect ot postgis
         PostGisConnection postgis = new PostGisConnection();
 
-        //int numset1 = postgis.NumberOfPoints();
-        //int numset2 = postgis.NumberOfLines();
-        //int numset3 = postgis.NumberOfPoly();
-        //int numset4 = postgis.NumberOfMultiPoly();
         int numset5 = postgis.NumberOfColums(NT);
-       int numset6 = postgis.NumberOfRows(NT);
-        //String numset7 = postgis.TableVaue();
-        //String numset8 = postgis.GeoJson();
-       // List<String> numset8 = postgis.ge
+        int numset6 = postgis.NumberOfRows(NT);
 
-
-//        model.addAttribute("id",numset1);
-//        model.addAttribute("id1",numset2);
-//        model.addAttribute("id2",numset3);
-//        model.addAttribute("id3",numset4);
         model.addAttribute("NC",numset5);
         model.addAttribute("NR",numset6);
         model.addAttribute("S","Public");
         model.addAttribute("T",NT);
         model.addAttribute("GT",GT);
         model.addAttribute("SD",df.format(size2)+" Mb");
-        //model.addAttribute("id6",numset7);
-        //model.addAttribute("geojson",numset8);
-
-
-
-//        if (conn!=null) {
-//            conn.getClass();
-//            System.out.println("conn closed ...");
-//        }
-
-
-
-      //  return "redirect:/";
-
 
 
 
@@ -162,8 +136,6 @@ public class MainController extends JSON {
 
             String[] number_of_attribute = new String[names.length];
             String[] Number_of_Values = new String[names.length];
-
-
 
 
 
@@ -190,23 +162,10 @@ public class MainController extends JSON {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     @RequestMapping(method = RequestMethod.GET, path = "/")
     public String viewSchema() {
         return "/index";
     }
-
 
 
     @RequestMapping(method = RequestMethod.GET, path = "/index")
@@ -229,25 +188,9 @@ public class MainController extends JSON {
 
 
 
-
-
     @RequestMapping(method = RequestMethod.GET, path = "/statistic")
         public String viewSchema5(Model model) {
 
-//            PostGisConnection postgis = new PostGisConnection();
-//            int numset1 = postgis.NumberOfPoints();
-//            int numset2 = postgis.NumberOfLines();
-//            int numset3 = postgis.NumberOfPoly();
-//            int numset4 = postgis.NumberOfMultiPoly();
-//            int numset5 = postgis.NumberOfColums();
-//            int numset6 = postgis.NumberOfRows();
-//
-//            model.addAttribute("id",numset1);
-//            model.addAttribute("id1",numset2);
-//            model.addAttribute("id2",numset3);
-//            model.addAttribute("id3",numset4);
-//            model.addAttribute("id4",numset5);
-//            model.addAttribute("id5",numset6);
 
 
             return "/statistic";
@@ -255,13 +198,7 @@ public class MainController extends JSON {
 
 
 
-
-
-
-
-
-
-// this is creating view in page mapo
+// this is creating view in page map
 
     @RequestMapping(method = RequestMethod.POST, path = "/createView")
 
@@ -276,24 +213,14 @@ public class MainController extends JSON {
 
 
 
-
         PostGisConnection postgis = new PostGisConnection();
 
-       // String NOV2 = NameOfView;
-       //String numset100 = postgis.geojsonview(NOV);
-
-
-
-
-
-        //postgis.geojsonview(NameOfView,NameOfTable,NameOfKey,NameOfValue,NameOfTag,LimitNumber);
 
         String geojsonview;
         String geojsontext;
 
         geojsonview = postgis.geojsonview(NameOfView,NameOfTable,NameOfKey,NameOfValue,NameOfTag,LimitNumber);
         model.addAttribute("CreateGeojson", geojsonview);
-
 
 
         geojsontext=postgis.geojsontext(NameOfView);
@@ -303,27 +230,6 @@ public class MainController extends JSON {
         return "/map";
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

@@ -174,7 +174,6 @@ public class PostGisConnection {
 
 
 
-
     //extract geojson
     public String geojsontext(String NameOfView) throws IOException, SQLException {
         Connection connection = DriverManager.getConnection(url, user, passwd);
@@ -185,26 +184,6 @@ public class PostGisConnection {
         rr.close();
         return count80;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

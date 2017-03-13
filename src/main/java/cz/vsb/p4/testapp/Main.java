@@ -26,26 +26,7 @@ public class Main extends SpringBootServletInitializer {
     public static void main(String[] args) {
         //TODO
         SpringApplication.run(Main.class, args);
-//
-//        PostGisConnection postgis = new PostGisConnection();
-//
-//        java.sql.Connection conn = postgis.getConn();
-//
-//        if (conn!=null) {
-//
-//            conn.getClass();
-//
-//            System.out.println("conn closed ...");
-//
-//
-//        }
-
-
 
     }
-
-
-
-
 
 }
